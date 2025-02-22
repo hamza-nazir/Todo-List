@@ -33,22 +33,26 @@ input.value="";
   let currentState="unCheck";
 radio.addEventListener('click',()=>{
 
-  
+  radio.style.accentColor="orange"
   
       if(currentState=="unCheck"){
         console.log('0');
+         radio.style.border="black"
+         radio.style.accentColor="orange"
         row.style.textDecoration="line-through";
+
         currentState="check"
     }
     else{
         console.log('1');
+         radio.style.accentColor="white"
           currentState="unCheck";
           row.style.textDecoration="none";
     }
       
 })
     
-
+row.style.borderBottom="solid 2x black";
 
 
 
