@@ -122,7 +122,9 @@ right: 0px;
 
 
 .hamza{
-    width: 170px;
+     max-width: 200px;
+    word-break: break-word;
+
 }
 .pointer{
     cursor: pointer;
