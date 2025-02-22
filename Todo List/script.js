@@ -25,7 +25,7 @@ parent.append(row);
 
 cross.addEventListener('click', () => {
     cross.classList.add('pointer');
-row.remove();
+row.classList.add('claSS')
 })
 
 input.value="";
@@ -40,11 +40,15 @@ radio.addEventListener('click',()=>{
          radio.style.border="black"
          radio.style.accentColor="orange"
         row.style.textDecoration="line-through";
+        row.style.color="grey";
 
+
+cross.style.color="black";
         currentState="check"
     }
     else{
         console.log('1');
+        row.style.color="black";
          radio.style.accentColor="white"
           currentState="unCheck";
           row.style.textDecoration="none";
@@ -52,10 +56,5 @@ radio.addEventListener('click',()=>{
       
 })
     
-row.style.borderBottom="solid 2x black";
-
-
-
-
 
 })
